@@ -16,14 +16,14 @@ export default makeStyles((theme) => ({
   infoContainer: {
     display: 'flex',
     alignItems: 'center',
-    // justifyContent: 'center',
+    justifyContent: 'center',
     padding: '25px 0',
   },
   chipContainer: {
     display: 'flex',
     flexWrap: 'wrap',
     paddingLeft: '25px',
-    // width: '50%',
+    width: '50%',
   },
   trySaying: {
     marginBottom: '25px',
