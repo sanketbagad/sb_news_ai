@@ -22,7 +22,7 @@ const App = () => {
 
     return (
         <div>
-            <h1> Sanket Bagad's AI for News Reading</h1>
+            <h1>Sanket Bagad's AI For News</h1>
             <NewsCards articles={newsArticles}/>
             {console.log("Fuck its Running")}
         </div>

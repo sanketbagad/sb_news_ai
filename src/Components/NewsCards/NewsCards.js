@@ -14,7 +14,7 @@ const NewsCards = ({ articles }) => {
     const classes = useStyles()
 
     if(!articles.length) {
-        <Grow in>
+        return (<Grow in>
             <Grid className={classes.container} container alignItems="stretch">
                 {infoCards.map((infocard) => (
                     <Grid item xs={12} sm={6} md={4} lg={3} className={classes.infoCard}>
@@ -34,8 +34,9 @@ const NewsCards = ({ articles }) => {
                     </Grid>
                 ))}
             </Grid>
-        </Grow>
+        </Grow>)   
     }
+
     return (
         <Grow in>
             <Grid className={classes.container} container alignItems="stretch">
