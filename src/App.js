@@ -19,6 +19,7 @@ const App = () => {
             onCommand: ({command, articles }) => {
                 if(command === "newHeadlines") {
                     setNewsArticles(articles)
+                    setActiveArticles(-1)
                 } else if(command === "highlight") {
                     setActiveArticles((prevActiveArticle) => prevActiveArticle + 1)
                 }
