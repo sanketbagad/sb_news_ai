@@ -24,6 +24,7 @@ const App = () => {
         <div>
             <h1> Sanket Bagad's AI for News Reading</h1>
             <NewsCards articles={newsArticles}/>
+            {console.log("Fuck its Running")}
         </div>
     )
 }
