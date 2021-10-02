@@ -31,6 +31,7 @@ const App = () => {
                         alanBtn().playText("Please Try That Again")
                     } else if(article) {
                         window.open(article.url, "_blank")
+                        alanBtn().playText("Opening...")
                     }
 
                 }
