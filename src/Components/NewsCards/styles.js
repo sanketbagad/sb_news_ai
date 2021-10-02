@@ -4,7 +4,7 @@ export default makeStyles({
     container: {
         padding: "0 5%",
         width: "100%",
-        margin: "0"
+        margin: 0
     },
     card: {
         display: "flex",
@@ -15,13 +15,13 @@ export default makeStyles({
         height: "45vh",
         padding: "10%",
         borderRadius: 10,
-        color: "white"
+        color: "white",
+        
     },
     infoCard: {
         display: "flex",
         flexDirection: "column",
-        textAlign: "center"
-
+        textAlign: "center",
     }
 })
 
