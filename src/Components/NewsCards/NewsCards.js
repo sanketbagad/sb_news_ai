@@ -17,7 +17,7 @@ const NewsCards = ({ articles }) => {
         <Grow in>
             <Grid className={classes.container} container alignItems="stretch">
                 {infoCards.map((infocard) => (
-                    <Grid item xs={12} sm={6} md={4} lg={3} className={classes.infoCards}>
+                    <Grid item xs={12} sm={6} md={4} lg={3} className={classes.infoCard}>
                         <div className={classes.card} style={{backgroundColor: infocard.color}}>
                             <Typography variant="h5"> {infocard.title} </Typography>
                             {infocard.info ? <Typography variant="h6">
@@ -31,7 +31,6 @@ const NewsCards = ({ articles }) => {
                             {infocard.text}
                             </i></Typography>
                         </div>
-                    
                     </Grid>
                 ))}
             </Grid>
