@@ -29,6 +29,7 @@ const App = () => {
 
     return (
         <div>
+            {console.log("Working on opening on title")}
             <div className={classes.logoContainer}>
                 <img alt="Sanket Bagad" src="https://image.shutterstock.com/z/stock-vector-letter-sb-logo-vector-download-1509294749.jpg" className={classes.alanLogo} />
             </div>
