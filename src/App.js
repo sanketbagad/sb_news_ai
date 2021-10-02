@@ -25,13 +25,13 @@ const App = () => {
                     setActiveArticles((prevActiveArticle) => prevActiveArticle + 1)
                 } else if (command === "open") {
                     const parseNumber = number.length > 2 ? wordsToNumbers(number, {fuzzy : true}) : number  
-                    const articles = articles[parseNumber - 1]
+                    const article = articles[parseNumber - 1]
 
                     if(parseNumber > 20) {
                         alanBtn().playText("Please Try That Again")
+                    } else if(article) {
+                        window.open(article.url, "_blank")
                     }
-                    window.open(articles[number].url, "_blank")
-
 
                 }
             }
