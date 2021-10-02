@@ -12,13 +12,15 @@ const App = () => {
     const classes = useStyles()
 
    const [newsArticles, setNewsArticles] = useState([])
-
+   const [activeArticles, setActiveArticles] = useState(0)
     useEffect(() => {
         alanBtn({
             key: alanKey,
             onCommand: ({command, articles }) => {
                 if(command === "newHeadlines") {
                     setNewsArticles(articles)
+                } else if(command === "highlight") {
+                    setActiveArticles((prevActiveArticle) => prevActiveArticle + 1)
                 }
             }
         })
@@ -29,7 +31,7 @@ const App = () => {
             <div className={classes.logoContainer}>
                 <img alt="Sanket Bagad" src="https://image.shutterstock.com/z/stock-vector-letter-sb-logo-vector-download-1509294749.jpg" className={classes.alanLogo} />
             </div>
-            <NewsCards articles={newsArticles}/>
+            <NewsCards articles={newsArticles} activeArticles={activeArticles}/>
         </div>
     )
 }
