@@ -12,7 +12,7 @@ const App = () => {
     const classes = useStyles()
 
    const [newsArticles, setNewsArticles] = useState([])
-   const [activeArticles, setActiveArticles] = useState(0)
+   const [activeArticles, setActiveArticles] = useState(-1)
     useEffect(() => {
         alanBtn({
             key: alanKey,
